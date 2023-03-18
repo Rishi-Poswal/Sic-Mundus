@@ -1,0 +1,332 @@
+/*
+	@name event
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; 
+	background-color: #F2959C; 
+	overflow-y: hidden;}
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block;
+	 position: relative; width: 100%;
+	    overflow: hidden; display: block;
+		  margin-left: auto; margin-right: auto;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;  }
+
+#content-container > div{ position: relative; top:inherit; }
+
+#logocul{
+	position:absolute;
+	opacity:0;
+	width:600px;
+	height:600px;
+	top: 10%;
+  left: 25%;
+  animation-name: logo;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+@keyframes logo {
+	0%{opacity: 0; }
+	50%{opacity: 0.5; transform: scale(1.2,1.2);}
+	100%{opacity: 1;transform: scale(1,1);}
+	
+}
+#rectangle_1 {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 730px;
+	background:#ffccbb;
+	animation: colour;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes colour {
+	0%   {background-color:#ffccbb;}
+  25%  {background-color:#ff9198;}
+  50%  {background-color:#2d3e6b;}
+  75%{background-color:#152347}
+  100% {background-color:#0c1834 ;}
+ /* 72%  {background-color:#2d3e6b;}
+  80%  {background-color:#ff9198;}
+  100%   {background-color:#ffccbb;} */
+	
+}
+/*
+#moon{
+	position:absolute;
+	bottom:0px;
+	left: auto;
+    right: auto;
+	width: 200px;
+	height: 200px;
+	animation-name: moonrise;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	transform: rotate(90deg);
+}
+@keyframes moonrise {
+	from{}
+	to{
+		top: 300px;
+		left: auto;
+        right: auto;
+		transform: scale(3,3);
+		transform: rotate(90deg);
+	}
+	
+}*/
+#tallhouse_1 {
+	position: absolute;
+	top: 33px;
+	left:35%;
+	width: 357px;
+	height: 687px;
+	animation-name: house;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+@keyframes house {
+	0%{}
+	50%{opacity:1;}
+	to{
+		transform: scale(1.2,1.2);
+		opacity: 0;
+	}
+	
+}
+#pinkmount{
+	position:absolute;
+	top:50px;
+	left:0px;
+}
+
+#bluemountright {
+	top: 191px;
+	left: 436px;
+	width: 1492px;
+	height: 586px;
+	animation-name: blueright;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	
+}
+@keyframes blueright {
+	from{
+	
+	}
+	to{
+	left: 550px;
+	transform: scale(2,1);
+	}
+}
+
+
+#bluemountleft_1 {
+	position:absolute;
+	top: 271px;
+	left:0px;
+	width: 844px;
+	height: 538px;
+	animation-name: blueleft;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	
+}
+@keyframes blueleft {
+	from{
+	
+	}
+	to{
+	left: -280px;
+	transform: scale(2,1);
+	}
+}
+
+
+#treethin_1 {
+	position:absolute;
+	top: 0px;
+	right: -20px;
+	width: 433px;
+	height: 720px;
+	animation-name: treeright;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	
+}
+@keyframes treeright {
+	from{
+	
+	}
+	to{
+		top: -17px;
+	left: 1200px;
+	transform: scale(2,2);
+	}
+}
+
+#treethin_2 {
+	top: 0px;
+	left: -20px;
+	width: 436px;
+	height: 725px;
+	animation-name: treeleft;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	
+}
+@keyframes treeleft {
+	from{
+	
+	}
+	to{
+		top: -17px;
+	left: -100px;
+	transform: scale(2,2);
+	}
+}
+
+
+#bird2_1 {
+	top: 102px;
+	left: 847px;
+	width: 141px;
+	height: 109px;
+}
+
+
+#bird2_2 {
+	top: 376px;
+	left: 1019px;
+	width: 141px;
+	height: 109px;
+}
+
+
+#bird2_3 {
+	top: 376px;
+	left: 257px;
+	width: 141px;
+	height: 109px;
+}
+
+
+#cloud3_1 {
+	top: -75px;
+	left: 105px;
+	width: 1375px;
+	height: 946px;
+	animation-name: cloudright;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+
+}
+@keyframes cloudright {
+	from{}
+	to{
+		left: 2000px;
+	}
+	
+}
+
+
+#cloud3_2 {
+	top: -75px;
+	left: -40px;
+	width: 1520px;
+	height: 927px;
+	animation-name: cloudleft;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+
+}
+@keyframes cloudleft {
+	from{}
+	to{
+		left:-2000px;
+	}
+	
+}
+
+/*Navigation Bar*/
+#navbutton{
+	background-color: #f1f1f1;
+	position: absolute;
+	left: 47%;
+	top: 90%;
+	padding-left: 5px;
+	padding-right:5px;
+	border-radius: 4px;
+}
+
+.overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #2d3e6b;
+	overflow-y: hidden;
+	transition: 0.5s;
+	opacity: 0.87;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+  }
+  
+  .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #f0eeee;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #050047;
+	background-color: #F2959C;
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.overlay {overflow-y: auto;}
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+	}
+  }
