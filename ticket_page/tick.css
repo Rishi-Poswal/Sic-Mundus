@@ -1,0 +1,192 @@
+body {
+    background: url(skins/bg.svg) no-repeat center fixed;
+    background-size: cover;
+}
+
+
+#lef {
+    position: absolute;
+left: 0%;
+right: 71%;
+top: 10%;
+bottom: 24%;
+
+/* mix-blend-mode: overlay; */
+
+}
+
+#mid{
+    position: absolute;
+left: 30%;
+right: 40%;
+top: 0%;
+bottom: 50%;
+
+
+mix-blend-mode: overlay;
+/* opacity: 0.15; */
+
+}
+
+#right{
+    position: absolute;
+left: 80%;
+right: 10%;
+top: 2%;
+bottom: 58%;
+
+mix-blend-mode: overlay;
+/* opacity: 0.5; */
+}
+
+#lef{
+    animation-name: glide_l;
+    animation-duration: 30s;
+  animation-timing-function: linear;
+  
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#mid{
+    animation-name: glide_m;
+    animation-duration: 30s;
+  animation-timing-function: linear;
+  
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+#right{
+    animation-name: glide_r;
+    animation-duration: 30s;
+  animation-timing-function: linear;
+  
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes glide_m{
+    0% {left:0% }
+    100% {right: 0%;}
+
+}
+
+@keyframes glide_l{
+
+    0% {left:0% }
+    100% {left: 65%;}
+
+}
+
+@keyframes glide_r{
+
+    0% {right:0% }
+    100% {left: 0%;}
+
+}
+
+.card{
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#poor:hover{
+    
+    width: 300px;
+  height: 300px;
+  transform: translate(70px,-65px) scale(1.4) rotate(360deg);
+  
+}
+
+#rich:hover{
+    
+    width: 300px;
+  height: 300px;
+  transform: translate(70px,-65px) scale(1.4) rotate(360deg);
+  
+}
+
+/*Tried to do that Display element hover
+
+#rich:hover + .hide {
+    display: block;
+  }
+
+
+.hide{
+    display: none;
+} */
+
+.arrow{
+    color: rgb(244, 119, 223); font-weight: bold; text-shadow: 1px 1px 3px rgba(54, 2, 58,0.7);
+}
+
+.btn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/*Navigation Bar*/
+#navbutton{
+	background-color: rgba(192, 114, 215, 0.5);
+	position: absolute;
+	left: 49%;
+	top: 90%;
+	padding-left: 5px;
+	padding-right:5px;
+	border-radius: 4px;
+}
+
+.overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgb(0,0,0.9);
+	overflow-y: hidden;
+	transition: 0.5s;
+	opacity: 0.85;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+  }
+  
+  .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.overlay {overflow-y: auto;}
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+	}
+  }
