@@ -1,0 +1,267 @@
+body {
+    background: url(skins/hill.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+/*Navigation Bar*/
+#navbutton{
+	background-color: rgba(236, 64, 193, 0.5);
+	position: absolute;
+	left: 49%;
+	top: 90%;
+	padding-left: 5px;
+	padding-right:5px;
+	border-radius: 4px;
+}
+
+.overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgb(0,0,0.9);
+	overflow-y: hidden;
+	transition: 0.5s;
+	opacity: 0.85;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+  }
+  
+  .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #ffffff;
+    background-color: rgb(117, 50, 112);
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.overlay {overflow-y: auto;}
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+	}
+  }
+
+  /* Left side about us content */
+  .left{
+    float: left;
+    margin: 8% 0% 0% 7%;
+
+  }
+  .about {
+    
+    overflow-y: scroll; 
+  }
+  
+  
+  .about::-webkit-scrollbar {
+      display: none;
+  }
+  
+  
+  .about {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
+
+
+  /* Team content in right */
+  .right{
+    float: right;
+    margin: 8% 4% 0% 0%;
+    
+  }
+
+  .team {
+    
+    overflow-y: scroll; 
+  }
+  
+  
+  .team::-webkit-scrollbar {
+      display: none;
+  }
+  
+  
+  .team {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  #sponsor{
+    text-align: center;
+  }
+
+  .text{
+
+    background-color: none;
+    width: 400px;
+    height: 492px;
+    
+    color: rgb(255, 231, 245);
+    font-size: large;
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgb(79, 9, 74);
+  }
+
+  .heading{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 2px rgb(66, 27, 67) , 0 0 10px white;
+    
+  }
+
+  .contact{
+    top: 60%;
+    left: 38.8%;
+    align-items: center;
+    
+    color: #f1f1f1;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    
+  }
+
+  #contact_heading{
+    font-family: 'Courier New', Courier, monospace;
+    
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+  }
+
+  #phone{
+    color: rgba(245, 213, 255, 0.683);
+    line-height: 2;
+  }
+
+  .phone_hover:hover {
+     color: #f1f1f1;
+     transform: scale(1.2);
+  }
+
+
+  .fa {
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    
+    margin: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(0, 0, 0) inset;
+    transition: 300ms;
+  }
+  
+  .fa:hover {
+      color: #ffffff;
+    box-shadow: 0 0 30px 0 #ffffff;
+    transform: scale(1.2) ;
+    color: #f1f1f1;
+    background-color: rgb(38, 0, 39);
+  }
+
+  .fa-instagram {
+    left: 48.3%;
+    width: 60px;
+    height: 60px;
+    padding: 12px;
+    font-size: 37px;
+    
+    
+    top: 49%;
+    background: #ffffff;
+    color: rgb(37, 37, 37);
+  }
+
+  .fa-facebook {
+    left: 48.5%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 30px;
+    
+    
+    top: 38.7%;
+    background: #ffffff;
+    color: rgb(37, 37, 37);
+  }
+
+  .fa-youtube {
+    left: 48.7%;
+    width: 40px;
+    height: 40px;
+    padding: 6.5px;
+    font-size: 25px;
+    
+    
+    top: 30%;
+    background: #ffffff;
+    color: rgb(37, 37, 37);
+  }
+
+  .fa-twitter {
+    left: 49%;
+    width: 30px;
+    height: 30px;
+    padding: 5.5px;
+    font-size: 17px;
+    
+    top: 23%;
+    background: #ffffff;
+    color: rgb(37, 37, 37);
+  }
+
+  #red{
+    width: 190px;
+    height: 160px;
+  }
+  #souled{
+    width: 190px;
+    height: 160px;
+  }
+
+  .row img{
+    position: relative;
+    left: 699%
+    align-self;
+    padding: 0 29px 0 0;
+  filter: drop-shadow(1px 1px 3px rgb(54, 0, 54));
+  }
+
+  .img:hover{
+    
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  
+
+  }
+  
