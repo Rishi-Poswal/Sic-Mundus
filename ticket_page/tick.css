@@ -172,6 +172,7 @@ mix-blend-mode: overlay;
   
   .overlay a:hover, .overlay a:focus {
 	color: #f1f1f1;
+	  background: rgba(143,20,214,0.715);
   }
   
   .overlay .closebtn {
