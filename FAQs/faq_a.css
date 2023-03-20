@@ -1,0 +1,234 @@
+body{
+    background-image: url('skins/faqs.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.layout{
+    float: right;
+    width: 800px;
+    height: 550px;
+    margin: 100px 50px 0px 0px;
+    overflow-y: scroll;
+}
+
+.layout::-webkit-scrollbar {
+    display: none;
+}
+
+.layout {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.accordion{
+    
+    padding: 5px 10px 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgba(132, 56, 152, 0.646);
+    border-radius: 25px;
+}
+.accordion__question p{
+    color: #ffffff;
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px black;
+}
+.accordion__answer p{
+    margin: 5px;
+    padding: 10px;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    background: rgba(81, 25, 76, 0.361);
+    border-radius: 25px; 
+    text-shadow: 1px 1px 1px black;
+}
+.accordion:hover{
+    cursor: pointer;
+}
+.accordion__answer {
+    display: none;
+} 
+.accordion.active .accordion__answer {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.left{
+    float: left;
+    margin: 6% 0% 0% 6%;
+
+  }
+  .faq {
+    overflow-y: scroll; 
+  }
+  
+  
+  .faq::-webkit-scrollbar {
+      display: none;
+  }
+  
+  .faq {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
+
+
+  .genre{
+
+    background-color: none;
+    width: 400px;
+    height: 492px;
+    
+    color: rgb(255, 231, 245);
+    font-size: large;
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgb(79, 9, 74);
+  }
+
+  .heading{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 2px rgb(66, 27, 67) , 0 0 10px white;
+    margin-bottom: 20px;
+    
+  }
+
+  .sub{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 5px black;
+
+  }
+
+  .layout{
+    scroll-behavior: smooth;
+  }
+
+  .links{
+    text-decoration: none;
+    color: rgb(231, 129, 129);
+    font-size: 28px;
+    transition: 500ms;
+  }
+  .link{
+    transition: 300ms;
+
+
+  }
+
+  .link:hover{
+    
+    transform: scale(1.2) translate(35px,3px);
+  }
+  .links:hover{
+    color: #ffffff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Navigation Bar*/
+#navbutton{
+	background-color: rgba(58, 129, 252, 0.7);
+	position: absolute;
+	left: 49%;
+	top: 90%;
+	padding-left: 5px;
+	padding-right:5px;
+	border-radius: 4px;
+}
+
+.overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgb(0,0,0.9);
+	overflow-y: hidden;
+	transition: 0.5s;
+	opacity: 0.85;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+  }
+  
+  .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #ffffff;
+    background-color: rgb(117, 50, 112);
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.overlay {overflow-y: auto;}
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+	}
+  }
